@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "img": "./src/img/p-1.png",
+        "title": "News Hub | News API",
+        "description": "This Project is made using free News API, users can fetch latest news by category wise. App is implemeted based on React, readt-router , axios library and talwind for designing.",
+        "demo": "/",
+        "github": "/"
+    },
+    {
+        "id": 2,
+        "img": "./src/img/p-2.png",
+        "title": "Github User Finder",
+        "description": "Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known primarily for the Kedarnath Temple.",
+        "demo": "/",
+        "github": "/"
+    },
+    {
+        "id": 3,
+        "img": "./src/img/p-3.png",
+        "title": "IMDB CLONE",
+        "description": "Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known primarily for the Kedarnath Temple.",
+        "demo": "/",
+        "github": "/"
+    },
+    {
+        "id": 4,
+        "img": "./src/img/p-4.png",
+        "title": "Tours & Travel Website",
+        "description": "Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known primarily for the Kedarnath Temple.",
+        "demo": "/",
+        "github": "/"
+    },
+    {
+        "id": 5,
+        "img": "./src/img/p-5.png",
+        "title": "Youtube Transcript Summarizer",
+        "description": "Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known primarily for the Kedarnath Temple.",
+        "demo": "/",
+        "github": "/"
+    },
+    {
+        "id": 6,
+        "img": "./src/img/p-6.png",
+        "title": "Text Convertor",
+        "description": "Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known primarily for the Kedarnath Temple.",
+        "demo": "/",
+        "github": "/"
+    }
+]
