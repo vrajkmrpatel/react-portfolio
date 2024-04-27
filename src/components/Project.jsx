@@ -18,8 +18,10 @@ const Project = () => {
     useEffect(() => {
         async function fetchData() {
             try {
+                
                 const response = await fetch("https://json-server-cpyj.onrender.com/projects/");
                 const data = await response.json();
+                console.log(data);
                 setCards(data);
             } catch (error) {
                 console.log("Error fetching data:", error);
@@ -55,12 +57,12 @@ const Project = () => {
                             <Link
                             to={card.demo}
                              className="w-1/2 bg-white text-black uppercase text-center  border hover:text-indigo-600 hover:border-indigo-600 border-black p-2 rounded-full m-1">
-                             <a href="" className=" flex justify-center items-center gap-1">demo<FaArrowUpRightFromSquare /></a>
+                             <a className=" flex justify-center items-center gap-1">demo<FaArrowUpRightFromSquare /></a>
                              </Link>
                             <Link
                             to={card.github}
                             className="w-1/2 bg-white hover:bg-black text-black uppercase text-center border hover:text-white  border-black p-2 rounded-full m-1">
-                            <a href="" className=" flex justify-center items-center gap-1">Github<FaGithub /></a>
+                            <a className=" flex justify-center items-center gap-1">Github<FaGithub /></a>
 
                             </Link>
                         </div>
