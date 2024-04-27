@@ -19,8 +19,8 @@ const Hero = () => {
                 <div className="poppins-medium text-lg md:text-2xl">
                     Hello, My self Vrajkumar Patel
                 </div>
-                <div className="poppins-semibold text-2xl md:text-4xl font-semibold my-2">
-                    I am a CSE Student{" "}
+                <div className=" flex gap-2 md:gap-3 poppins-semibold text-2xl md:text-4xl font-semibold my-2">
+                   <p>I am a</p> <p className=" text-blue-700">CSE Student</p>
                 </div>
 
                 <p className="poppins-regular mt-2 text-sm md:text-lg text-justify">
