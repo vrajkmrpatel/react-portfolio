@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar p-4 md:p-3 md:flex md:justify-between items-center  ">
-            <div className="poppins-demibold text-md md:text-2xl px-3 md:px-5  font-bold">
+            <div className="poppins-semibold text-xl md:text-2xl px-3 md:px-5 font-bold">
                 <Link to="/">Vraj Patel</Link>
             </div>
 
