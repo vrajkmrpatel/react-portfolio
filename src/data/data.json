@@ -4,7 +4,7 @@
         "img": "./src/img/p-1.png",
         "title": "News Hub | News API",
         "description": "This Project is made using free News API, users can fetch latest news by category wise. App is implemeted based on React, readt-router , axios library and talwind for designing.",
-        "demo": "/",
+        "demo": "https://newsapi-pearl.vercel.app/",
         "github": "/"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "img": "./src/img/p-5.png",
+        "img": "./src/img/p-5.jpeg",
         "title": "Youtube Transcript Summarizer",
         "description": "Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known primarily for the Kedarnath Temple.",
         "demo": "/",

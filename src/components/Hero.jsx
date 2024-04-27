@@ -20,7 +20,7 @@ const Hero = () => {
                     Hello, My self Vrajkumar Patel
                 </div>
                 <div className="poppins-semibold text-2xl md:text-4xl font-semibold my-2">
-                    I am a Software Engineer{" "}
+                    I am a CSE Student{" "}
                 </div>
 
                 <p className="poppins-regular mt-2 text-sm md:text-lg">
