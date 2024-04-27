@@ -23,7 +23,7 @@ const Hero = () => {
                     I am a CSE Student{" "}
                 </div>
 
-                <p className="poppins-regular mt-2 text-sm md:text-lg">
+                <p className="poppins-regular mt-2 text-sm md:text-lg text-justify">
                     I am currently in my final year of Computer Engineering. I
                     am very passionate about technology, programming and
                     development. I have done Programming in C, C++ and Java.
@@ -31,7 +31,7 @@ const Hero = () => {
                     coding web development has been a part of my interest. I
                     have made projects in Javascript, React, Node and Express.
                 </p>
-                <p className="poppins-regular mt-2 text-sm md:text-lg">
+                <p className="poppins-regular mt-2 text-sm md:text-lg text-justify">
                     I love to explore things & love to implement them in
                     real-life problems. I'm currently trying to learn various
                     technologies and will definitely master them one day.

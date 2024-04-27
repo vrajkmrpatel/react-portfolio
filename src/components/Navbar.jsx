@@ -20,7 +20,7 @@ const Navbar = () => {
             </div>
 
             <ul
-                className={`md:flex pr-5 text-center md:items-center md:gap-3 absolute md:static   left-0 w-full md:w-auto md:pl-0 text-black 
+                className={`md:flex text-center md:items-center md:gap-3 absolute md:static left-0 w-full md:w-auto md:pl-0 text-black 
         ${open ? "top-16 opacity-100 flex flex-col md:flex-row bg-black z-10" : "top-[-420px]"} md:opacity-100 `}
             >
                 <Link
