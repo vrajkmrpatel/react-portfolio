@@ -38,7 +38,7 @@ const Project = () => {
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="w-30 max-w-96 flex flex-col gap-2 m-4 bg-white p-4 rounded-lg drop-shadow-md"
+                        className="w-30 max-w-96 flex flex-col gap-2 m-4 bg-black p-4 rounded-lg drop-shadow-md"
                     >
                         <img
                             src={card.img}
