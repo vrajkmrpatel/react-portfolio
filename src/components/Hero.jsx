@@ -3,24 +3,35 @@ import myimg from "../assets/myimg.jpg";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+// import Typewriter from 'typewriter-effect';
+import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 
 const Hero = () => {
+
+    const [text] = useTypewriter({
+        words: ['CSE Student', 'Web Developer', 'Software Engineer'],
+        delaySpeed: 1000,
+        loop: {},
+    });
+  
     return (
         <div className="w-full container mx-auto flex justify-center items-center flex-wrap mt-5">
-            <div className="left-container md:w-1/2 w-96 p-5">
+            <div className="left-container md:w-1/2 w-96 p-5 ">
                 <img
                     src={myimg}
                     alt="myimg"
-                    className="w-96 m-auto rounded-full border border-black"
+                    className="w-96 m-auto rounded-full border border-white p-1"
                 />
             </div>
             <div className="right-container md:w-1/2 w-96 p-5">
                 <div className="poppins-medium text-lg md:text-2xl">
                     Hello, My self Vrajkumar Patel
                 </div>
-                <div className=" flex gap-2 md:gap-3 poppins-semibold text-2xl md:text-4xl font-semibold my-2">
-                   <p>I am a</p> <p className=" text-blue-700">CSE Student</p>
+                <div className="poppins-bold text-2xl md:text-4xl font-semibold my-2">
+                   I'm a 
+                   <span className="pl-2 text-blue-700 uppercase">{text}</span>
+                   <Cursor/>
                 </div>
 
                 <p className="poppins-regular mt-2 text-sm md:text-lg text-justify">
