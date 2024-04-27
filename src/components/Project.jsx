@@ -18,7 +18,7 @@ const Project = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("./src/data/data.json");
+                const response = await fetch("https://json-server-cpyj.onrender.com/projects/");
                 const data = await response.json();
                 setCards(data);
             } catch (error) {
