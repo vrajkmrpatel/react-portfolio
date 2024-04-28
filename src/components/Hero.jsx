@@ -6,6 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 // import Typewriter from 'typewriter-effect';
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
+import Resume from '../../public/resume.pdf'
 
 const Hero = () => {
 
@@ -47,8 +48,8 @@ const Hero = () => {
                     real-life problems. I'm currently trying to learn various
                     technologies and will definitely master them one day.
                 </p>
-    */}
-                <div className="flex justify-center md:justify-normal mt-4 gap-3 md:gap-5">
+    
+                <div className="flex justify-normal mt-4 gap-3 md:gap-5">
                     <Link
                         to="https://www.linkedin.com/in/sdevrajkumarpatel/"
                         className="text-xl md:text-3xl p-3 bg-white text-blue-700 rounded-full drop-shadow-md hover:bg-black hover:text-white"
@@ -76,6 +77,13 @@ const Hero = () => {
                         <FaSquareXTwitter />
                     </Link>
                 </div>
+
+                */}
+                    <div className="mt-5">
+                    <Link
+                    to="https://drive.google.com/file/d/1SapCFvRACycTsJamd1HsvjCNeBh0xAOn/view?usp=drive_link"
+                    className="poppins-semibold px-7 py-2 bg-white text-black rounded-full text-center uppercase">Resume</Link>
+            </div>
             </div>
         </div>
     );
