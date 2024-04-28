@@ -25,15 +25,15 @@ const Hero = () => {
                 />
             </div>
             <div className="right-container md:w-1/2 w-96 p-5">
-                <div className="poppins-medium text-lg md:text-2xl">
+                <div className="poppins-medium text-xl md:text-4xl">
                     Hello, My self Vrajkumar Patel
                 </div>
-                <div className="poppins-bold text-2xl md:text-4xl font-semibold my-2">
+                <div className="poppins-bold text-4xl md:text-6xl font-semibold my-2">
                    I'm a 
                    <span className="pl-2 text-blue-700 uppercase">{text}</span>
                    <Cursor/>
                 </div>
-
+        {/*
                 <p className="poppins-regular mt-2 text-sm md:text-lg text-justify">
                     I am currently in my final year of Computer Engineering. I
                     am very passionate about technology, programming and
@@ -47,6 +47,7 @@ const Hero = () => {
                     real-life problems. I'm currently trying to learn various
                     technologies and will definitely master them one day.
                 </p>
+    */}
                 <div className="flex justify-center md:justify-normal mt-4 gap-3 md:gap-5">
                     <Link
                         to="https://www.linkedin.com/in/sdevrajkumarpatel/"
