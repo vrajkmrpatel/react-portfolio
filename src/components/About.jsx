@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className="container mx-auto w-full h-[85vh] mt-5 ">
+    <div className="container mx-auto w-full  mt-5 ">
             <div className="text-xl md:text-3xl text-center m-2 font-semibold">
                 About
             </div>

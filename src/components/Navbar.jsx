@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="navbar p-4 md:p-3 md:flex md:justify-between items-center  ">
+        <div className="navbar container mx-auto p-4 md:p-3 md:flex md:justify-between items-center  ">
             <div className="poppins-semibold text-xl md:text-2xl px-3 md:px-5 font-bold">
                 <Link to="/">Vraj Patel</Link>
             </div>
@@ -55,6 +56,23 @@ const Navbar = () => {
                 >
                     Contact
                 </Link>
+
+                <div
+                    className={` flex justify-center md:justify-normal gap-3 `}
+                >
+                    <Link
+                        to="https://www.linkedin.com/in/sdevrajkumarpatel/"
+                        className=" mx-2 my-3 text-2xl md:text-4xl text-white bg-black"
+                    >
+                        <FaLinkedin />
+                    </Link>
+                    <Link
+                        to="https://github.com/vrajkmrpatel"
+                        className=" mx-2 my-3 text-2xl md:text-4xl text-white bg-black rounded-full drop-shadow-md"
+                    >
+                        <FaGithub />
+                    </Link>
+                </div>
             </ul>
         </div>
     );

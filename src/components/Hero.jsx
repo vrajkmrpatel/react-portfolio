@@ -82,7 +82,7 @@ const Hero = () => {
                     <div className="mt-5">
                     <Link
                     to="https://drive.google.com/file/d/1SapCFvRACycTsJamd1HsvjCNeBh0xAOn/view?usp=drive_link"
-                    className="poppins-semibold px-7 py-2 bg-white text-black rounded-full text-center uppercase">Resume</Link>
+                    className="poppins-semibold px-7 py-3 bg-white text-black rounded-full text-center uppercase">Resume</Link>
             </div>
             </div>
         </div>
