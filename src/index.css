@@ -16,6 +16,16 @@
       /* color: white; */
 }
 
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+  cursor: pointer;
+
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
 .poppins-thin {
       font-family: "Poppins", sans-serif;
       font-weight: 100;

@@ -42,7 +42,7 @@ const Navbar = () => {
                 className={`md:flex text-center md:items-center md:gap-3 absolute md:static left-0 w-full md:w-auto md:pl-0 
         ${
             open
-                ? "top-16 opacity-100 flex flex-col md:flex-row z-10 bg-base-100 drop-shadow-lg"
+                ? "top-16 opacity-100 flex pb-4 flex-col md:flex-row z-10 bg-base-100 "
                 : "top-[-420px]"
         } md:opacity-100 `}
             >

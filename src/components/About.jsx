@@ -18,42 +18,42 @@ const About = () => {
                   <div className='flex justify-center p-5 items-center flex-wrap  mt-5 gap-4'>
                     
                    
-                    <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={Html} alt="" />
+                    <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={Html} alt="" />
                     </div>
-                    <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={Css} alt="" />
+                    <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={Css} alt="" />
                     </div>
-                    <div className=''>
-                    <img className=' w-24 h-24  rounded-xl object-cover ' src={JS} alt="" />
+                    <div >
+                    <img className='logo  w-24 h-24  rounded-xl object-cover ' src={JS} alt="" />
                   </div>
-                    <div className=''>
+                    <div >
                     
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={ReactLogo} alt="" />
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={ReactLogo} alt="" />
                     </div>
-                    <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={Node} alt="" />
+                    <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={Node} alt="" />
                     </div>
-                    <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={Express} alt="" />
+                    <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={Express} alt="" />
                     </div>
-                    <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={Mongo} alt="" />
+                    <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={Mongo} alt="" />
                     </div>
-                    <div className=''>
-                    <img className=' w-24 h-24  rounded-xl object-cover ' src={C} alt="" />
+                    <div >
+                    <img className='logo  w-24 h-24  rounded-xl object-cover ' src={C} alt="" />
                     </div>
-                    <div className=''>
-                      <img className='w-24 h-24 rounded-xl object-cover' src={Cpp} alt="" />
+                    <div >
+                      <img className='logo w-24 h-24 rounded-xl object-cover' src={Cpp} alt="" />
                     </div>
-                    <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover' src={Python} alt="" />
+                    <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover' src={Python} alt="" />
                       </div>
-                      <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={Vscode} alt="" />
+                      <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={Vscode} alt="" />
                       </div>
-                    <div className=''>
-                      <img className=' w-24 h-24  rounded-xl object-cover ' src={Java} alt="" />
+                    <div >
+                      <img className='logo  w-24 h-24  rounded-xl object-cover ' src={Java} alt="" />
                     </div>
                   </div>  
                 </div>

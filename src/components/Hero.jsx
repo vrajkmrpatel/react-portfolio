@@ -79,7 +79,7 @@ const Hero = () => {
                 </div>
 
                 */}
-                <button className="btn btn-neutral">
+                <button className="btn btn-primary">
                     <Link
                     to="https://drive.google.com/file/d/1SapCFvRACycTsJamd1HsvjCNeBh0xAOn/view?usp=drive_link"
                     className="poppins-semibold px-5 py-2 text-center uppercase">Resume</Link>
