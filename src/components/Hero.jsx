@@ -22,7 +22,7 @@ const Hero = () => {
                 <img
                     src={myimg}
                     alt="myimg"
-                    className="w-96 m-auto rounded-full border border-white p-1"
+                    className="w-96 m-auto rounded-full border p-1"
                 />
             </div>
             <div className="right-container md:w-1/2 w-96 p-5">
@@ -79,11 +79,11 @@ const Hero = () => {
                 </div>
 
                 */}
-                    <div className="mt-5">
+                <button className="btn btn-neutral">
                     <Link
                     to="https://drive.google.com/file/d/1SapCFvRACycTsJamd1HsvjCNeBh0xAOn/view?usp=drive_link"
-                    className="poppins-semibold px-7 py-3 bg-white text-black rounded-full text-center uppercase">Resume</Link>
-            </div>
+                    className="poppins-semibold px-5 py-2 text-center uppercase">Resume</Link>
+                    </button>
             </div>
         </div>
     );

@@ -4,12 +4,12 @@ const Contact = () => {
     return (
         <div className="container mx-auto w-full mt-5 ">
             <div className="flex flex-col justify-center">
-                <div className="poppins-bold mb-4 tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl text-center">
+                <div className="poppins-bold mb-4 tracking-tight text-3xl sm:text-5xl text-center">
                     Get in Touch
                 </div>
                 <div className="form-elements items-center">
                     <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
-                        <h2 class="mb-4 text-2xl font-bold dark:text-white">
+                        <h2 class="mb-4 text-2xl font-bold ">
                             Ready to Get Started?
                         </h2>
                         <form id="contactForm">
@@ -25,7 +25,7 @@ const Contact = () => {
                                             id="name"
                                             autocomplete="given-name"
                                             placeholder="Your name"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                            className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                                             name="name"
                                         />
                                     </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                                             id="email"
                                             autocomplete="email"
                                             placeholder="Your email address"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                            className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                                             name="email"
                                         />
                                     </div>

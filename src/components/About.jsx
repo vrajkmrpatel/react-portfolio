@@ -14,7 +14,7 @@ const About = () => {
             <div className="w-full container mx-auto flex justify-center items-center flex-wrap-reverse mt-5">
             <div className="left-container md:w-1/2 w-96 p-5 ">
                 <div className='technologies-container'>
-                  <div className='poppins-bold text-2xl text-white text-center'>Technologies</div>
+                  <div className='poppins-bold text-2xl text-center'>Technologies</div>
                   <div className='flex justify-center p-5 items-center flex-wrap  mt-5 gap-4'>
                     
                    

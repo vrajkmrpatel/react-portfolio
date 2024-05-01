@@ -40,14 +40,14 @@ const Project = () => {
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="w-30 max-w-96 flex flex-col gap-2 m-4 bg-black p-4 rounded-lg drop-shadow-md"
+                        className="w-30 max-w-96 flex flex-col gap-2 m-4  p-4 rounded-lg bg-base-200 drop-shadow-md"
                     >
                         <img
                             src={card.img}
                             className="w-90 h-full rounded-lg cursor-pointer "
                             alt={card.title}
                         />
-                        <div className="md:text-xl text-center font-bold hover:text-indigo-600">
+                        <div className="md:text-xl text-center font-bold ">
                             {card.title}
                         </div>
                         <p className="text-xs md:text-sm text-gray-600">
