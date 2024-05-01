@@ -12,7 +12,7 @@ const Contact = () => {
                    className="w-[80%] flex justify-center items-center gap-4 flex-col">
                         <input type="text" className="input input-bordered w-full" placeholder="Your Name"/>
                         <input type="email" className="input input-bordered w-full" placeholder="Your Email"/>
-                        <textarea className="input input-bordered w-full h-48 " placeholder="Enter Message..."></textarea>
+                        <textarea className="textarea textarea-bordered w-full h-48 " placeholder="Enter Message..."></textarea>
                         <button type="submit" className="btn btn-primary rounded-full w-full">Send Message</button>
                    </form>
                    
