@@ -10,6 +10,10 @@ export default {
       themes: [
         "light",
         "dark",
+        "night",
+        "synthwave",
+        "cyberpunk",
+        "forest"
       ],
     },
 };

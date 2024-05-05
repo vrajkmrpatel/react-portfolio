@@ -40,7 +40,7 @@ const Project = () => {
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="w-30 max-w-96 flex flex-col gap-2 m-4  p-4 rounded-lg bg-base-200 drop-shadow-md"
+                        className="w-30 max-w-96 flex flex-col gap-2 m-4  p-4 rounded-lg bg-base-200 drop-shadow-md "
                     >
                         <img
                             src={card.img}
@@ -56,7 +56,7 @@ const Project = () => {
                         <div className="flex justify-center text-xs md:text-sm font-semibold">
                             <Link
                             to={card.demo}
-                             className="w-1/2 bg-white text-black uppercase text-center  border hover:text-indigo-600 hover:border-indigo-600 border-black p-2 rounded-full m-1">
+                             className="w-1/2 bg-white text-black uppercase text-center  border hover:text-white hover:bg-indigo-600 border-black hover:border-indigo-600 p-2 rounded-full m-1">
                              <a className=" flex justify-center items-center gap-1">demo<FaArrowUpRightFromSquare /></a>
                              </Link>
                             <Link

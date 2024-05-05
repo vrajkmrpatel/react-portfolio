@@ -135,7 +135,7 @@ const Contact = () => {
                                 required
                             />
                             <textarea
-                                className="textarea textarea-bordered w-full h-48 "
+                                className="textarea textarea-bordered w-full h-64"
                                 placeholder="Enter Message..."
                                 required
                             ></textarea>

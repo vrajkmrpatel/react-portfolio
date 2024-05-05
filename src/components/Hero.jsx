@@ -17,12 +17,12 @@ const Hero = () => {
     });
 
     return (
-        <div className="w-full container mx-auto flex justify-center items-center flex-wrap mt-5">
+        <div className="w-full container mx-auto flex justify-center items-center flex-wrap mt-5 ">
             <div className="left-container md:w-1/2 w-96 p-5 ">
                 <img
                     src={myimg}
                     alt="myimg"
-                    className="w-96 m-auto rounded-full border p-1"
+                    className="w-96 m-auto rounded-full border p-1 "
                 />
             </div>
             <div className="right-container md:w-1/2 w-96 p-5">
