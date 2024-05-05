@@ -7,13 +7,14 @@ export default {
     },
     plugins: [require("daisyui")],
     daisyui: {
-      themes: [
-        "light",
-        "dark",
-        "night",
-        "synthwave",
-        "cyberpunk",
-        "forest"
-      ],
+        themes: [
+            "light",
+            "dark",
+            "night",
+            "synthwave",
+            "cyberpunk",
+            "forest",
+            "coffee",
+        ],
     },
 };

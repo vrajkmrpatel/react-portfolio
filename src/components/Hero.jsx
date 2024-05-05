@@ -22,7 +22,7 @@ const Hero = () => {
                 <img
                     src={myimg}
                     alt="myimg"
-                    className="w-96 m-auto rounded-full border p-1 "
+                    className="w-96 m-auto rounded-full border border-primary p-1 "
                 />
             </div>
             <div className="right-container md:w-1/2 w-96 p-5">

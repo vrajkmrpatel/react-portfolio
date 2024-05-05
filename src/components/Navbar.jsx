@@ -29,8 +29,8 @@ const Navbar = () => {
     };
 
     return (
-        <div className="navbar container mx-auto p-4 md:p-3 md:flex md:justify-between items-center  ">
-            <div className="poppins-semibold text-xl md:text-2xl px-3 md:px-5 font-bold">
+        <div className="navbar container mx-auto p-4 md:p-3 md:flex md:justify-between items-center">
+            <div className="poppins-semibold text-xl md:text-2xl px-3 md:px-5 font-bold ">
                 <Link to="/">Vraj Patel</Link>
             </div>
 
@@ -52,28 +52,28 @@ const Navbar = () => {
         } md:opacity-100 `}
             >
                 <Link
-                    className="mx-2 my-2 text-xl cursor-pointer  font-semibold hover:text-indigo-600"
+                    className="mx-2 my-2 text-xl cursor-pointer  font-semibold hover:text-primary"
                     onClick={() => setOpen(false)}
                     to="/"
                 >
                     Home
                 </Link>
                 <Link
-                    className="mx-2 my-3 text-xl cursor-pointer  font-semibold hover:text-indigo-600"
+                    className="mx-2 my-3 text-xl cursor-pointer  font-semibold hover:text-primary"
                     onClick={() => setOpen(false)}
                     to="/projects"
                 >
                     Projects
                 </Link>
                 <Link
-                    className="mx-2 my-3 text-xl cursor-pointer  font-semibold hover:text-indigo-600"
+                    className="mx-2 my-3 text-xl cursor-pointer  font-semibold hover:text-primary"
                     onClick={() => setOpen(false)}
                     to="/about"
                 >
                     About
                 </Link>
                 <Link
-                    className="mx-2 my-3 text-xl cursor-pointer  font-semibold hover:text-indigo-600"
+                    className="mx-2 my-3 text-xl cursor-pointer  font-semibold hover:text-primary"
                     onClick={() => setOpen(false)}
                     to="contact"
                 >

@@ -56,7 +56,7 @@ const Project = () => {
                         <div className="flex justify-center text-xs md:text-sm font-semibold">
                             <Link
                             to={card.demo}
-                             className="w-1/2 bg-white text-black uppercase text-center  border hover:text-white hover:bg-indigo-600 border-black hover:border-indigo-600 p-2 rounded-full m-1">
+                             className="w-1/2 bg-white text-black uppercase text-center  border hover:text-white hover:bg-primary border-black hover:border-primary p-2 rounded-full m-1">
                              <a className=" flex justify-center items-center gap-1">demo<FaArrowUpRightFromSquare /></a>
                              </Link>
                             <Link
