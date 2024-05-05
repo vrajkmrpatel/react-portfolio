@@ -13,6 +13,8 @@ export default {
             "night",
             "synthwave",
             "cyberpunk",
+            "fantasy",
+            "cupcake",
             "forest",
             "coffee",
         ],

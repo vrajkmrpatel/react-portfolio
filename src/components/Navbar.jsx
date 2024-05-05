@@ -92,6 +92,9 @@ const Navbar = () => {
                         <button onClick={() => handleThemeChange("light")} className="btn w-full">Light</button>
                     </li>
                     <li>
+                        <button onClick={() => handleThemeChange("fantasy")} className="btn w-full">Fantasy</button>
+                    </li>
+                    <li>
                         <button onClick={() => handleThemeChange("dark")} className="btn w-full">Dark</button>
                     </li>
                     <li>
