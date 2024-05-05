@@ -103,9 +103,7 @@ const Navbar = () => {
                     <li>
                         <button onClick={() => handleThemeChange("forest")} className="btn w-full">Forest</button>
                     </li>
-                    <li>
-                        <button onClick={() => handleThemeChange("cyberpunk")} className="btn w-full">Cyberpunk</button>
-                    </li>
+
                 </ul>
             </div>
                     {/*<label className="swap swap-rotate btn btn-circle">

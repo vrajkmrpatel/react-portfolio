@@ -31,7 +31,7 @@ const Hero = () => {
                 </div>
                 <div className="poppins-bold text-4xl md:text-6xl font-semibold my-2">
                     I'm a
-                    <span className="pl-2 text-blue-700 uppercase">{text}</span>
+                    <span className="pl-2 text-primary uppercase">{text}</span>
                     <Cursor />
                 </div>
 

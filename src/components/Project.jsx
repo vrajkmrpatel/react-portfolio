@@ -33,9 +33,9 @@ const Project = () => {
 
     return (
         <div className="container mx-auto w-full h-[85vh] mt-5 ">
-            <div className="text-xl md:text-3xl text-center m-2 font-semibold">
-                Projects
-            </div>
+        <div className="poppins-bold text-primary mb-4 tracking-tight text-3xl sm:text-5xl text-center">
+        Projects
+    </div>
             <div className="flex flex-wrap justify-center gap-2">
                 {cards.map((card) => (
                     <div

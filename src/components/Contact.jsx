@@ -29,7 +29,7 @@ const Contact = () => {
     return (
         <div className="container mx-auto w-full mt-5 ">
             <div className="flex flex-col justify-center items-center">
-                <div className="poppins-bold mb-4 tracking-tight text-3xl sm:text-5xl text-center">
+                <div className="poppins-bold text-primary mb-4 tracking-tight text-3xl sm:text-5xl text-center">
                     Get in Touch
                 </div>
 

@@ -21,9 +21,9 @@ import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div className="container mx-auto w-full  mt-5 ">
-            <div className="text-xl md:text-3xl text-center m-2 font-semibold">
-                About
-            </div>
+        <div className="poppins-bold text-primary mb-4 tracking-tight text-3xl sm:text-5xl text-center">
+        About
+    </div>
             <div className="w-full container mx-auto flex justify-center items-center flex-wrap-reverse mt-5">
                 <div className="left-container md:w-1/2 w-96 p-5 ">
                     <div className="technologies-container">
