@@ -1,8 +1,22 @@
-# React + Vite
+# My Personal Portfolio-App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies use
 
-Currently, two official plugins are available:
+React  
+Talwind Css  
+Daisy UI [Themes, Buttons]  
+React-Icons  
+Axios  
+Node
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Projects API -
+
+Developed using : Node.js  
+Hosted on : Render.com  
+Repo Link :   https://github.com/vrajkmrpatel/json-server  
+https://json-server-cpyj.onrender.com/projects/
+
+## Porfolio Hosted Link -
+
+Hosted on : Vercel  
+https://react-portfolio-woad-chi.vercel.app/

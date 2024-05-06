@@ -12,7 +12,7 @@ const Hero = () => {
 
     const [text] = useTypewriter({
         words: ['CSE Student', 'Web Developer', 'Software Engineer'],
-        delaySpeed: 1000,
+        delaySpeed: 2000,
         loop: {},
     });
 
