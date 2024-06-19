@@ -46,7 +46,7 @@ const Project = () => {
             </div>
             <div>
                 {loading ? (
-                    <p className="text-center ">Loading...</p>
+                    <p className="text-center ">Loading... <br /> This will take some time...</p>
                 ) : error ? (
                     <p className="text-center ">Error: {error}</p>
                 ) : (
