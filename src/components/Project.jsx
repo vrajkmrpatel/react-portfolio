@@ -25,7 +25,7 @@ const Project = () => {
         const fetchData = async () => {
             try {
                 const response = await axios(
-                    "https://json-server-cpyj.onrender.com/projects/"
+                    "http://13.221.183.149:8000/projects"
                 );
                 const data = response.data;
                 setCards(data);
