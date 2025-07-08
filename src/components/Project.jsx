@@ -24,9 +24,7 @@ const Project = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios(
-                    "http://13.221.183.149:8000/projects"
-                );
+                const response = await axios("/api/projects");
                 const data = response.data;
                 setCards(data);
                 setLoading(false);
