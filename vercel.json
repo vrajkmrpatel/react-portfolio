@@ -1,10 +1,6 @@
 {
       "rewrites": [
         {
-          "source": "/api/projects",
-          "destination": "http://13.221.183.149:8000/projects"
-        },
-        {
           "source": "/(.*)",
           "destination": "/"
         }

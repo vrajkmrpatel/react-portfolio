@@ -24,7 +24,9 @@ const Project = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios("/api/projects");
+                const response = await axios(
+                    "https://json-server-cpyj.onrender.com/projects/"
+                );
                 const data = response.data;
                 setCards(data);
                 setLoading(false);
