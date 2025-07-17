@@ -48,7 +48,7 @@ const Hero = () => {
                         <img src={Resume} />
                         <div className="modal-action">
                             <form method="dialog">
-                                <button className="btn  btn-warning mx-2"><Link to="https://drive.google.com/file/d/1SapCFvRACycTsJamd1HsvjCNeBh0xAOn/view?usp=drive_link" >Share</Link></button>
+                                <button className="btn  btn-warning mx-2"><Link to="https://drive.google.com/file/d/1uVYDGqpXOVGcChRi-UdHVQONOGBVXCxK/view?usp=sharing" >Share</Link></button>
                                 <button className="btn btn-error">Close</button>
                             </form>
                         </div>
