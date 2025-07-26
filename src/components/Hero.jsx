@@ -7,6 +7,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 // import Typewriter from 'typewriter-effect';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
+import ProfileViews from "./ProfileViews";
 
 const Hero = () => {
 
@@ -27,7 +28,7 @@ const Hero = () => {
             </div>
             <div className="right-container md:w-1/2 w-96 p-5">
                 <div className="poppins-medium text-xl md:text-4xl">
-                    Hello, My self Vrajkumar Patel
+                    Hi 👋<br></br> My name is Vrajkumar Patel
                 </div>
                 <div className="poppins-bold text-4xl md:text-6xl font-semibold my-2">
                     I'm a
@@ -54,6 +55,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </dialog>
+                <ProfileViews />
             </div>
         </div>
     );
