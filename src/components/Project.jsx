@@ -25,7 +25,8 @@ const Project = () => {
         const fetchData = async () => {
             try {
                 const response = await axios(
-                    "https://json-server-cpyj.onrender.com/projects/"
+                    // "https://json-server-cpyj.onrender.com/projects/"
+                    "https://9z5zbpb5g2.execute-api.us-east-1.amazonaws.com/v1/projects"
                 );
                 const data = response.data;
                 setCards(data);
