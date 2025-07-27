@@ -2,6 +2,8 @@
 
 A modern, high-performance portfolio built with React and Firebase — featuring serverless APIs, caching, accessibility, and polished animations.
 
+<img src="https://github.com/vrajkmrpatel/react-portfolio/tree/main/src/assets/serverless-api.png"></img>
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: React
