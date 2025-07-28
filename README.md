@@ -2,7 +2,11 @@
 
 A modern, high-performance portfolio built with React and Firebase — featuring serverless APIs, caching, accessibility, and polished animations.
 
+## Serverless API 
+
 <img src="https://github.com/vrajkmrpatel/react-portfolio/blob/main/src/assets/serverless-api.png"></img>
+
+
 
 ## 🛠️ Tech Stack
 
@@ -13,6 +17,33 @@ A modern, high-performance portfolio built with React and Firebase — featuring
 - **Animation**: `react-countup` for visitor engagement
 - **Caching**: Custom cache layer to optimize API/database calls
 
+---
+## Sample AWS Lambda function
+
+```python
+# lambda_function.py
+
+   import json
+   from datetime import datetime
+
+   def lambda_handler(event, context):
+      return {
+         "statusCode": 200,
+         "headers": {
+               "Content-Type": "application/json",
+               "Access-Control-Allow-Origin": "*",
+               "Cache-Control": "max-age=86400, public",
+               "Last-Modified": datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")
+         },
+         "body": json.dumps([
+               # objects of projects
+               {..},
+               {..}
+               
+         ])
+      }
+
+   ```
 ---
 
 ## ✨ Core Features
