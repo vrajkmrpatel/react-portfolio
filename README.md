@@ -95,21 +95,4 @@ A modern, high-performance portfolio built with React and Firebase — featuring
 
 ---
 
-## 🧠 Future Enhancements
-
-- Add CI pipeline with **Lighthouse audits** for performance, accessibility, SEO.
-- Integrate a **GraphQL API** with caching and offline support.
-- Introduce skeleton loaders or progressive image loading (e.g., blur-up effect).
-- Implement offline-first support with service workers or IndexedDB.
-
----
-
-## 📄 License & Credits
-
-Licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-Inspired by open-source React portfolios and templates such as those from Ubaimutl and others.
-
----
-
 **Built with ❤️ by Vraj Patel**  
