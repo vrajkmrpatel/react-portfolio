@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
+import ChatBot from './components/ChatBot'
 
 // Lazy load route components for better performance
 const Project = lazy(() => import('./components/Project'))
@@ -32,6 +33,7 @@ function App() {
           </main>
         </Suspense>
         <Footer />
+        <ChatBot />
       </BrowserRouter>
     </div>
   )
