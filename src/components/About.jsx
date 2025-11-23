@@ -20,11 +20,11 @@ import { Link } from "react-router-dom";
 
 const About = () => {
     return (
-        <div className="container mx-auto w-full  mt-5 ">
-            <div className="poppins-bold text-primary mb-4 tracking-tight text-3xl sm:text-5xl text-center">
-                About
+        <div className="container mx-auto w-full py-12 px-4">
+            <div className="poppins-bold text-primary mb-8 tracking-tight text-3xl sm:text-5xl text-center">
+                About Me
             </div>
-            <div className="w-full container mx-auto flex justify-center items-center flex-wrap-reverse mt-5">
+            <div className="w-full container mx-auto flex justify-center items-center flex-wrap-reverse gap-8">
                 <div className="left-container md:w-1/2 w-96 p-5 ">
                     <div className="technologies-container">
                         <div className="poppins-bold text-2xl text-center">
@@ -144,36 +144,51 @@ const About = () => {
                     </p>
 
                     <div className="flex justify-center md:justify-normal mt-4 gap-3 md:gap-5">
-                        <Link
-                            to="https://www.linkedin.com/in/sdevrajkumarpatel/"
-                            className="text-xl md:text-3xl p-3 bg-white text-blue-700 rounded-full drop-shadow-md hover:bg-black hover:text-white"
+                        <a
+                            href="https://www.linkedin.com/in/sdevrajkumarpatel/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xl md:text-3xl p-3 bg-white text-blue-700 rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                            aria-label="LinkedIn Profile"
                         >
                             <FaLinkedin />
-                        </Link>
-                        <Link
-                            to="https://github.com/vrajkmrpatel"
-                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white"
+                        </a>
+                        <a
+                            href="https://github.com/vrajkmrpatel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                            aria-label="GitHub Profile"
                         >
                             <FaGithub />
-                        </Link>
-                        <Link
-                            to="https://leetcode.com/Vrajkmr/"
-                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white"
+                        </a>
+                        <a
+                            href="https://leetcode.com/u/vraj_31/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                            aria-label="LeetCode Profile"
                         >
                             <SiLeetcode />
-                        </Link>
-                        <Link
-                            to="https://auth.geeksforgeeks.org/user/vrajpatel31"
-                            className="text-xl md:text-3xl p-3 bg-white text-green-500 rounded-full drop-shadow-md hover:bg-black hover:text-white"
+                        </a>
+                        <a
+                            href="https://auth.geeksforgeeks.org/user/vrajpatel31"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xl md:text-3xl p-3 bg-white text-green-500 rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                            aria-label="GeeksforGeeks Profile"
                         >
                             <SiGeeksforgeeks />
-                        </Link>
-                        <Link
-                            to="https://twitter.com/ilovecompiler"
-                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white"
+                        </a>
+                        <a
+                            href="https://twitter.com/ilovecompiler"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                            aria-label="Twitter Profile"
                         >
                             <FaSquareXTwitter />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

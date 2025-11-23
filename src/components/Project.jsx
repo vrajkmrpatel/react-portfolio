@@ -6,6 +6,8 @@ import {
     FaArrowUpRightFromSquare,
     FaSquareArrowUpRight,
 } from "react-icons/fa6";
+import { getCachedData, setCachedData } from "../utils/cache";
+import ProjectSkeleton from "./ProjectSkeleton";
 
 // function to limit the number of words in description
 function truncateDescription(description, maxLength) {
@@ -16,6 +18,9 @@ function truncateDescription(description, maxLength) {
     return description;
 }
 
+const API_URL = "https://9z5zbpb5g2.execute-api.us-east-1.amazonaws.com/v1/projects";
+const CACHE_KEY = "cache_projects";
+
 const Project = () => {
     const [cards, setCards] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -23,12 +28,18 @@ const Project = () => {
 
     useEffect(() => {
         const fetchData = async () => {
+            // Check cache first
+            const cached = getCachedData(CACHE_KEY);
+            if (cached) {
+                setCards(cached);
+                setLoading(false);
+                return;
+            }
+
             try {
-                const response = await axios(
-                    // "https://json-server-cpyj.onrender.com/projects/"
-                    "https://9z5zbpb5g2.execute-api.us-east-1.amazonaws.com/v1/projects"
-                );
+                const response = await axios(API_URL);
                 const data = response.data;
+                setCachedData(CACHE_KEY, data);
                 setCards(data);
                 setLoading(false);
             } catch (error) {
@@ -41,51 +52,62 @@ const Project = () => {
     }, []);
 
     return (
-        <div className="container mx-auto w-full h-[85vh] mt-5 ">
-            <div className="poppins-bold text-primary mb-4 tracking-tight text-3xl sm:text-5xl text-center">
+        <div className="container mx-auto w-full py-8 px-4 min-h-[60vh]">
+            <div className="poppins-bold text-primary mb-8 tracking-tight text-3xl sm:text-5xl text-center">
                 Projects
             </div>
             <div>
                 {loading ? (
-                    <p className="text-center ">Loading... <br /> This will take some time...</p>
+                    <div className="flex flex-wrap justify-center gap-2">
+                        {[...Array(6)].map((_, i) => <ProjectSkeleton key={i} />)}
+                    </div>
                 ) : error ? (
                     <p className="text-center ">Error: {error}</p>
                 ) : (
-                    <div className="flex flex-wrap justify-center gap-2">
+                    <div className="flex flex-wrap justify-center gap-6 pb-8">
                         {cards.map((card) => (
                             <div
                                 key={card.id}
-                                className="w-30 max-w-96 flex flex-col gap-2 m-4  p-4 rounded-lg bg-base-200 drop-shadow-md transition-transform duration-300 hover:scale-105"
+                                className="w-full max-w-sm flex flex-col gap-3 p-5 rounded-xl bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-base-300"
                             >
-                                <img
-                                    src={card.img}
-                                    className="w-90 h-full rounded-lg cursor-pointer "
-                                    alt={card.title}
-                                />
-                                <div className="md:text-xl text-center font-bold ">
-                                    {card.title}
+                                <div className="overflow-hidden rounded-lg">
+                                    <img
+                                        src={card.img}
+                                        className="w-full h-56 object-cover rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                                        alt={`${card.title} project screenshot`}
+                                        loading="lazy"
+                                        width="360"
+                                        height="200"
+                                    />
                                 </div>
-                                <p className="text-xs md:text-sm text-gray-600">
-                                    {truncateDescription(card.description, 15)}
-                                </p>
-                                <div className="flex justify-center text-xs md:text-sm font-semibold">
+                                <div className="flex flex-col gap-2 flex-grow">
+                                    <h3 className="text-xl md:text-2xl text-center font-bold text-primary">
+                                        {card.title}
+                                    </h3>
+                                    <p className="text-sm md:text-base text-base-content/80 text-center">
+                                        {truncateDescription(card.description, 15)}
+                                    </p>
+                                </div>
+                                <div className="flex justify-center gap-3 text-xs md:text-sm font-semibold mt-auto">
                                     <Link
                                         to={card.demo}
-                                        className="w-1/2 bg-white text-black uppercase text-center  border hover:text-white hover:bg-primary border-black hover:border-primary p-2 rounded-full m-1"
+                                        className="flex-1 bg-primary text-primary-content uppercase text-center border border-primary hover:bg-primary-focus p-3 rounded-lg transition-all duration-300 hover:shadow-lg"
+                                        aria-label={`View demo of ${card.title}`}
                                     >
-                                        <a className=" flex justify-center items-center gap-1">
-                                            demo
+                                        <span className="flex justify-center items-center gap-2">
                                             <FaArrowUpRightFromSquare />
-                                        </a>
+                                            Demo
+                                        </span>
                                     </Link>
                                     <Link
                                         to={card.github}
-                                        className="w-1/2 bg-white hover:bg-black text-black uppercase text-center border hover:text-white  border-black p-2 rounded-full m-1"
+                                        className="flex-1 bg-base-300 hover:bg-base-content hover:text-base-100 uppercase text-center border border-base-300 p-3 rounded-lg transition-all duration-300 hover:shadow-lg"
+                                        aria-label={`View ${card.title} on GitHub`}
                                     >
-                                        <a className=" flex justify-center items-center gap-1">
-                                            Github
+                                        <span className="flex justify-center items-center gap-2">
                                             <FaGithub />
-                                        </a>
+                                            Github
+                                        </span>
                                     </Link>
                                 </div>
                             </div>

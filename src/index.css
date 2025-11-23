@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 :root {
       /* background-color: #121212; */
       /* height: 100vh;

@@ -8,7 +8,7 @@ const Contact = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "2be010e3-70e0-4a00-a72e-a370573b8fe3");
+        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -27,13 +27,13 @@ const Contact = () => {
     };
 
     return (
-        <div className="container mx-auto w-full mt-5 ">
+        <div className="container mx-auto w-full py-12 px-4">
             <div className="flex flex-col justify-center items-center">
-                <div className="poppins-bold text-primary mb-4 tracking-tight text-3xl sm:text-5xl text-center">
+                <div className="poppins-bold text-primary mb-8 tracking-tight text-3xl sm:text-5xl text-center">
                     Get in Touch
                 </div>
 
-                <div className="w-full container mx-auto flex justify-center items-center flex-wrap mt-5">
+                <div className="w-full container mx-auto flex justify-center items-center flex-wrap gap-8">
                     <div className="left-container md:w-1/2 w-96 p-5 ">
                         <div class="mb-6 space-y-8 md:mt-8">
                             <p class="flex items-start -mx-2">
@@ -116,37 +116,48 @@ const Contact = () => {
                             ></iframe>
                         </div>
                     </div>
-                    <div className="right-container md:w-1/2 w-96 p-5 flex justify-center flex-col items-center">
+                    <div className="right-container md:w-1/2 w-full max-w-lg p-5 flex justify-center flex-col items-center">
                         <form
                             onSubmit={onSubmit}
-                            className="w-[80%] flex justify-center items-center gap-4 flex-col"
+                            className="w-full flex justify-center items-center gap-5 flex-col bg-base-200 p-8 rounded-xl shadow-lg"
                         >
-                        <input type="hidden" name="access_key" value="2be010e3-70e0-4a00-a72e-a370573b8fe3"></input>
+
                             <input
                                 type="text"
-                                className="input input-bordered w-full"
+                                name="name"
+                                className="input input-bordered w-full input-lg"
                                 placeholder="Your Name"
                                 required
                             />
                             <input
                                 type="email"
-                                className="input input-bordered w-full"
+                                name="email"
+                                className="input input-bordered w-full input-lg"
                                 placeholder="Your Email"
                                 required
                             />
                             <textarea
-                                className="textarea textarea-bordered w-full h-64"
+                                name="message"
+                                className="textarea textarea-bordered w-full h-40 text-base"
                                 placeholder="Enter Message..."
                                 required
                             ></textarea>
                             <button
                                 type="submit"
-                                className="btn btn-primary rounded-full w-full"
+                                className="btn btn-primary btn-lg w-full shadow-lg hover:shadow-xl transition-all duration-300"
+                                aria-label="Send contact message"
                             >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
                                 Send Message
                             </button>
                         </form>
-                        <span>{result}</span>
+                        {result && (
+                            <div className={`mt-4 p-4 rounded-lg ${result.includes('Success') ? 'bg-success text-success-content' : 'bg-error text-error-content'}`}>
+                                {result}
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
