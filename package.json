@@ -12,6 +12,7 @@
     "axios": "^1.6.8",
     "countapi-js": "^1.0.2",
     "firebase": "^12.0.0",
+    "framer-motion": "^12.23.26",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
