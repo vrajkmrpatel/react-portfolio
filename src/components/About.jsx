@@ -146,8 +146,7 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Interactive Timeline */}
-            <Timeline />
+         
         </div>
     );
 };

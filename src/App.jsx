@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Footer from './components/Footer'
 import ChatBot from './components/ChatBot'
 import PageTransition from './components/PageTransition'
+import Timeline from './components/Timeline'
 
 // Lazy load route components for better performance
 const Project = lazy(() => import('./components/Project'))
@@ -28,6 +29,7 @@ function AnimatedRoutes() {
             <Route path='/' element={<Hero />}></Route>
             <Route path='/projects' element={<Project />}></Route>
             <Route path='/about' element={<About />}></Route>
+            <Route path='/timeline' element={<Timeline />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
           </Routes>
         </PageTransition>
