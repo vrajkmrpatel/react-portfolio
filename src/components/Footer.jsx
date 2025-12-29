@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
 
           {/* Right side - Social Links */}
-          <div className='flex gap-4 items-center'>
+          {/* <div className='flex gap-4 items-center'>
             <a
               href="https://github.com/vrajkmrpatel"
               target="_blank"
@@ -45,7 +45,7 @@ const Footer = () => {
             >
               <FaTwitter />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
