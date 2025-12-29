@@ -1,7 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter, FaReact } from "react-icons/fa6";
-import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
+import Timeline from "./Timeline";
 import {
     C,
     Mongo,
@@ -24,8 +22,9 @@ const About = () => {
             <div className="poppins-bold text-primary mb-8 tracking-tight text-3xl sm:text-5xl text-center">
                 About Me
             </div>
-            <div className="w-full container mx-auto flex justify-center items-center flex-wrap-reverse gap-8">
-                <div className="left-container md:w-1/2 w-96 p-5 ">
+            <div className="w-full container mx-auto flex justify-center items-start flex-wrap gap-8">
+                {/* Technologies - Left Side */}
+                <div className="left-container flex-1 md:max-w-[45%] w-full p-5 md:order-1 order-2">
                     <div className="technologies-container">
                         <div className="poppins-bold text-2xl text-center">
                             Technologies
@@ -118,7 +117,9 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="right-container md:w-1/2 w-96 p-5">
+
+                {/* About - Right Side */}
+                <div className="right-container flex-1 md:max-w-[45%] w-full p-5 md:order-2 order-1">
                     <p className="poppins-regular mt-2 text-sm md:text-lg text-justify">
                         I am currently pursuing my MTech in Information and
                         Communication Technology with a specialization in
@@ -142,56 +143,11 @@ const About = () => {
                         expertise,and I am committed to mastering the
                         technologies I engage with.
                     </p>
-
-                    <div className="flex justify-center md:justify-normal mt-4 gap-3 md:gap-5">
-                        <a
-                            href="https://www.linkedin.com/in/sdevrajkumarpatel/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xl md:text-3xl p-3 bg-white text-blue-700 rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
-                            aria-label="LinkedIn Profile"
-                        >
-                            <FaLinkedin />
-                        </a>
-                        <a
-                            href="https://github.com/vrajkmrpatel"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
-                            aria-label="GitHub Profile"
-                        >
-                            <FaGithub />
-                        </a>
-                        <a
-                            href="https://leetcode.com/u/vraj_31/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
-                            aria-label="LeetCode Profile"
-                        >
-                            <SiLeetcode />
-                        </a>
-                        <a
-                            href="https://auth.geeksforgeeks.org/user/vrajpatel31"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xl md:text-3xl p-3 bg-white text-green-500 rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
-                            aria-label="GeeksforGeeks Profile"
-                        >
-                            <SiGeeksforgeeks />
-                        </a>
-                        <a
-                            href="https://twitter.com/ilovecompiler"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
-                            aria-label="Twitter Profile"
-                        >
-                            <FaSquareXTwitter />
-                        </a>
-                    </div>
                 </div>
             </div>
+
+            {/* Interactive Timeline */}
+            <Timeline />
         </div>
     );
 };
