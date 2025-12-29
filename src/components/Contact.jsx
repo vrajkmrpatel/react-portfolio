@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 const Contact = () => {
     const [result, setResult] = useState("");
@@ -76,6 +79,58 @@ const Contact = () => {
                                 {result}
                             </div>
                         )}
+
+                        {/* Social Media Links */}
+                        <div className="mt-8">
+                            <h3 className="poppins-semibold text-xl text-center mb-4">Connect With Me</h3>
+                            <div className="flex justify-center gap-3 md:gap-5 flex-wrap">
+                                <a
+                                    href="https://www.linkedin.com/in/sdevrajkumarpatel/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xl md:text-3xl p-3 bg-white text-blue-700 rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                                    aria-label="LinkedIn Profile"
+                                >
+                                    <FaLinkedin />
+                                </a>
+                                <a
+                                    href="https://github.com/vrajkmrpatel"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                                    aria-label="GitHub Profile"
+                                >
+                                    <FaGithub />
+                                </a>
+                                <a
+                                    href="https://leetcode.com/u/vraj_31/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                                    aria-label="LeetCode Profile"
+                                >
+                                    <SiLeetcode />
+                                </a>
+                                <a
+                                    href="https://auth.geeksforgeeks.org/user/vrajpatel31"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xl md:text-3xl p-3 bg-white text-green-500 rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                                    aria-label="GeeksforGeeks Profile"
+                                >
+                                    <SiGeeksforgeeks />
+                                </a>
+                                <a
+                                    href="https://twitter.com/ilovecompiler"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xl md:text-3xl p-3 bg-white text-black rounded-full drop-shadow-md hover:bg-black hover:text-white transition-colors"
+                                    aria-label="Twitter Profile"
+                                >
+                                    <FaSquareXTwitter />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
