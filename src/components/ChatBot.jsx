@@ -111,7 +111,7 @@ const ChatBot = () => {
         <>
             {/* Chat Window */}
             {isOpen && (
-                <div className="fixed bottom-24 right-4 w-96 h-[600px] bg-base-100 rounded-lg shadow-2xl flex flex-col z-50 border border-base-300 sm:w-96 max-sm:w-[calc(100vw-2rem)] max-sm:h-[calc(100vh-8rem)] max-sm:bottom-20">
+                <div className="fixed bottom-20 right-4 w-[350px] h-[480px] bg-base-100 rounded-lg shadow-2xl flex flex-col z-[100] border border-base-300 sm:w-[350px] max-sm:inset-0 max-sm:w-full max-sm:h-full max-sm:rounded-none max-sm:border-0 chatbot-animate-in">
                     {/* Header */}
                     <div className="bg-primary text-primary-content p-4 rounded-t-lg flex justify-between items-center">
                         <div className="flex items-center gap-2">
@@ -217,11 +217,11 @@ const ChatBot = () => {
             {/* Floating Chat Button */}
             <button
                 onClick={toggleChat}
-                className={`fixed bottom-4 right-4 btn btn-circle btn-primary w-16 h-16 shadow-lg hover:shadow-xl transition-all duration-300 z-50 ${isOpen ? 'scale-0' : 'scale-100'
+                className={`fixed bottom-4 right-4 btn btn-circle btn-primary w-14 h-14 shadow-lg hover:shadow-xl transition-all duration-300 z-[90] ${isOpen ? 'scale-0' : 'scale-100'
                     }`}
                 aria-label="Open chat"
             >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
                 {/* Notification Badge */}
