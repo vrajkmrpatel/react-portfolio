@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -123,58 +124,18 @@ const Navbar = () => {
                             transitionDelay: open ? `${menuItems.length * 50}ms` : '0ms'
                         }}
                     >
-                        {/* Theme Selector - Responsive */}
-                        <div className="dropdown dropdown-end">
-                            <label
-                                tabIndex={0}
-                                className="btn btn-ghost btn-circle hover:rotate-12 transition-transform duration-200"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                                </svg>
-                            </label>
-                            <ul tabIndex={0} className="menu dropdown-content z-[100] p-2 shadow-lg bg-base-200 rounded-box w-40 mt-3 border border-base-300 animate-fade-in">
-                                <li className="menu-title">
-                                    <span className="text-xs font-semibold opacity-70">Choose Theme</span>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => handleThemeChange("light")}
-                                        className={`btn btn-sm justify-start transition-all duration-200 ${theme === 'light' ? 'btn-primary' : 'btn-ghost hover:scale-105'
-                                            }`}
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                                        </svg>
-                                        Light
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => handleThemeChange("dark")}
-                                        className={`btn btn-sm justify-start transition-all duration-200 ${theme === 'dark' ? 'btn-primary' : 'btn-ghost hover:scale-105'
-                                            }`}
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                                        </svg>
-                                        Dark
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => handleThemeChange("forest")}
-                                        className={`btn btn-sm justify-start transition-all duration-200 ${theme === 'forest' ? 'btn-primary' : 'btn-ghost hover:scale-105'
-                                            }`}
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                                        </svg>
-                                        Forest
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+                        {/* Theme Switcher - Toggle between cmyk and forest */}
+                        <button
+                            onClick={() => handleThemeChange(theme === "cmyk" ? "forest" : "cmyk")}
+                            className="btn btn-ghost btn-circle hover:rotate-12 transition-transform duration-200"
+                            aria-label="Toggle theme"
+                        >
+                            {theme === "cmyk" ? (
+                                <BsSun className="h-5 w-5" />
+                            ) : (
+                                <BsMoon className="h-5 w-5" />
+                            )}
+                        </button>
 
                         <label className="btn btn-circle hover:scale-110 transition-transform duration-200">
                             <a
