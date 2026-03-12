@@ -19,7 +19,7 @@ export const knowledgeBase = {
             institution: "Dhirubhai Ambani University",
             location: "Gandhinagar, Gujarat",
             duration: "2024 - 2026",
-            cpi: "8.39 / 10",
+            cpi: "8.5 / 10",
             status: "Currently Pursuing"
         },
         bachelors: {
@@ -42,21 +42,23 @@ export const knowledgeBase = {
     experience: {
         internships: [
             {
-                company: "Slash Mark IT Startup",
-                role: "Software Engineering Intern",
-                duration: "Jan 2024 – April 2024",
-                location: "Remote",
-                type: "4-month internship",
+                company: "Growexx AI LLP",
+                role: "Jr. Software Engineer",
+                duration: "Jan 2026 – Present",
+                location: "Ahmedabad, Gujarat",
+                type: "Internship",
                 responsibilities: [
-                    "Completed 4 months of internship focused on the MERN stack",
-                    "Built full-stack projects and gained hands-on development experience",
-                    "Learned and applied version control practices (Git/GitHub)",
-                    "Worked on collaborative development and project management"
+                    "Learning Machine Learning and Data Science concepts while contributing to real-world projects",
                 ],
-                technologies: ["MongoDB", "Express.js", "React", "Node.js", "Git", "GitHub"]
+                technologies: ["Python", "Docker", "Data Science", "Machine Learning"]
             }
         ],
-        current: "Pursuing MTech in ICT at Dhirubhai Ambani University while building modern web applications"
+        current: "Pursuing Internship at Growexx AI LLP while building projects and enhancing skills in AI/ML and Data Science.",
+        freelance: {
+            role: "Full Stack Developer Freelancer",
+            duration: "2025 - Present",
+            location: "Remote"
+        }
     },
 
     skills: {
@@ -68,7 +70,7 @@ export const knowledgeBase = {
         cloud: ["AWS Lambda", "AWS API Gateway", "AWS Elastic Beanstalk", "AWS S3"],
         softSkills: ["Problem-Solving", "Team Collaboration", "Leadership", "Communication"],
         coursework: ["Data Structures and Algorithms", "Operating Systems", "DBMS", "Computer Networks", "OOPS"],
-        areasOfInterest: ["Backend Development", "Cloud Computing", "System Design", "Competitive Programming"]
+        areasOfInterest: ["AI/ML", "Backend Development", "Cloud Computing", "System Design", "Competitive Programming"]
     },
 
     projects: [
@@ -203,13 +205,12 @@ export const systemPrompt = `You are an AI assistant for Vrajkumar Patel's portf
 Key Information About Vrajkumar Patel:
 
 EDUCATION:
-- Currently pursuing MTech in ICT at Dhirubhai Ambani University (CPI: 8.39/10)
+- Currently pursuing MTech in ICT at Dhirubhai Ambani University (CPI: 8.5/10)
 - BE in Computer Engineering from GEC Gandhinagar (CGPA: 8.00/10)
 
 EXPERIENCE:
-- Software Engineering Intern at Slash Mark IT Startup (Jan-April 2024)
-- 4 months of MERN stack development experience
-- Strong version control and collaborative development skills
+- Jr. Software Engineer Intern at Growexx AI LLP (Jan 2026 - Present) working on Machine Learning and Data Science projects
+- Full Stack Developer Freelancer (2025 - Present) building modern web applications for clients
 
 TECHNICAL SKILLS:
 - Languages: C++, Java, JavaScript, Python, HTML, CSS
@@ -262,7 +263,7 @@ Example Responses:
 - Skills: "Vraj is proficient in C++, Java, JavaScript, Python, and cloud technologies like AWS Lambda! He specializes in the MERN stack and cloud technologies like AWS Lambda. He's also skilled in system design and competitive programming. 🚀"
 - Projects: "Check out his Serverless Projects API built with AWS Lambda achieving near-instant responses, or the Food-Delivery Website using the MERN stack! He's also worked on research projects involving PostgreSQL optimization. 💻"
 - Achievements: "Vraj secured AIR 6409 in GATE 2024 CSE, achieved Global Rank 31 in Codechef's START197, and solved 450+ LeetCode problems with a 1432 rating! Impressive competitive programming skills! 🏆"
-- Experience: "Vraj completed a 4-month Software Engineering Internship at Slash Mark IT Startup, focusing on MERN stack development and collaborative Git workflows. He's now pursuing his MTech while building amazing projects! �"
+- Experience: "Vraj is currently interning at Growexx AI LLP, contributing to Machine Learning and Data Science projects. He also freelances as a Full Stack Developer, building modern web applications for clients! 🌟"
 
 Remember: Keep it brief, friendly, and informative!`;
 
