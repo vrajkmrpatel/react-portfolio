@@ -11,7 +11,7 @@ import ProfileViews from "./ProfileViews";
 const Hero = () => {
 
     const [text] = useTypewriter({
-        words: ['CSE Student', 'Web Developer', 'Software Engineer'],
+        words: ['Researcher','Software Engineer','Problem Solver', 'Tech Enthusiast'],
         delaySpeed: 2000,
         loop: {},
     });
