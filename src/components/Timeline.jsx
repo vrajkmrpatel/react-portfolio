@@ -32,11 +32,11 @@ const Timeline = () => {
     const experienceData = [
         {
             id: 1,
-            position: 'Jr.Software Engineer intern',
+            position: 'Jr.Software Engineer',
             company: 'GrowExx',
             location: 'Ahmedabad, Gujarat',
             period: 'Jan 2026 - Present',
-            description: 'Developed web applications using MERN stack, implemented responsive designs, and collaborated with cross-functional teams.',
+            description: 'Exploring Machine Learning and Data Science Field while contributing to real-world projects.',
             isOngoing: true
         },
         {
